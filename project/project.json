@@ -1,0 +1,16 @@
+{
+    "src": {
+        "index": "src/index.html",
+        "app": "src/app",
+        "entry": "src/app/app.js",
+        "html": "src/app/**/*.html",
+        "scss": "src/app/**/*.scss",
+        "js": "src/app/**/*.js"
+    },
+    "out": {
+        "dist": "dist/",
+        "index": "dist/index.html",
+        "jsout": "dist/app.js",
+        "partialName": "soccerPartials"
+    }
+}
