@@ -21,9 +21,9 @@ First make sure Gulp is globally installed, by running:
 After cloning the project, run the following commands:
 
     npm install
-    gulp serve
+    gulp
     
 This will start the development server, the sample app should be available at the following url:
 
-[http://localhost:8000/dist/index.html](http://localhost:8000/dist/index.html)
+[http://localhost:8000/](http://localhost:8000/)
     
