@@ -1,0 +1,23 @@
+{
+  "name": "interview-x",
+  "description": "none",
+  "main": "app.js",
+  "authors": [
+    "evan larsen"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/evanlarsen/interview-x",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/client/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.1",
+    "bootstrap": "^3.3.7"
+  }
+}

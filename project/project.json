@@ -1,16 +1,31 @@
 {
-    "src": {
-        "index": "src/index.html",
-        "app": "src/app",
-        "entry": "src/app/app.js",
-        "html": "src/app/**/*.html",
-        "scss": "src/app/**/*.scss",
-        "js": "src/app/**/*.js"
+    "server": {
+        "src": "src/server.js",
+        "out": "dist",
+        "port": 3000
     },
-    "out": {
-        "dist": "dist/",
-        "index": "dist/index.html",
-        "jsout": "dist/app.js",
-        "partialName": "soccerPartials"
+    "api":{
+        "src": {
+            "js": "src/api/**/*.js",
+            "tests": "src/api/**/*.spec.js"
+        },
+        "out": {
+            "dist": "dist/api"
+        }
+    },
+    "client": {
+        "src": {
+            "client": "src/client",
+            "html": "src/client/**/*.html",
+            "scss": "src/client/**/*.scss",
+            "css": "src/client/**/*.css",
+            "js": "src/client/**/*.js",
+            "thirdparty": "src/client/bower_components",
+            "tests": "src/client/**/*.spec.js"
+        },
+        "out": {
+            "dist": "dist/client",
+            "thirdpartydist": "dist/client/bower_components"
+        }
     }
 }
