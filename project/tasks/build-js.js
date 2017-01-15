@@ -41,7 +41,7 @@ gulp.task('build-client-js', () => {
         .pipe(sourcemaps.init())
         .pipe(babel())
         .pipe(ngAnnotate())
-        //.pipe(uglify())
+        .pipe(uglify())
         .on('error', gutil.log)
         .pipe(sourcemaps.write('./', {includeContent: true}))
         .pipe(gulp.dest(project.client.out.dist));
