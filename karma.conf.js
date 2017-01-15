@@ -4,9 +4,12 @@ module.exports = function(config) {
     basePath: '',
 
     files: [
-      'dist/*.js',
-      'node_modules/angular-mocks/angular-mocks.js',
-      'src/app/**/*.spec.js'
+      'dist/client/bower_components/angular/angular.js',
+      'dist/client/bower_components/angular-route/angular-route.js',
+      'dist/client/bower_components/angular-mocks/angular-mocks.js',
+      'dist/client/**/*.module.js',
+      'dist/client/**/*.component.js',
+      'src/**/*.spec.js'
     ],
 
     autoWatch: true,

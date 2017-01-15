@@ -6,7 +6,7 @@ gulp.task('test', ['build-js'], () => {
     return gulp.src('./foobar')
         .pipe(karma({
             configFile: 'karma.conf.js',
-            action: 'run'
+            action: 'run' //watch
         }))
         .on('error', err => {
             console.log(`karma tests failed ${err}`);
