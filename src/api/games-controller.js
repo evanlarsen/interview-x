@@ -11,6 +11,9 @@ export class GamesController {
         return (req, res) => {
             repo.getGames().then(games => {
                 res.send(games);    
+            }).catch(err => {
+                console.error('database error', err);
+                res.status(httpStatusCodes.serverError).end();
             });
         };
     }
@@ -22,7 +25,8 @@ export class GamesController {
             }
             repo.addGame(req.body).then(_ => {
                 res.send('ok');
-            }).catch(_ => {
+            }).catch(err => {
+                console.error('database error', err);
                 res.status(httpStatusCodes.badRequest).send('failed to add game');
             });
         };

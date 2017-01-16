@@ -27,5 +27,15 @@
             "dist": "dist/client",
             "thirdpartydist": "dist/client/bower_components"
         }
+    },
+    "aws": {
+        "mysql": {
+            "server": "mydbinstance.ckmbkgfphja7.us-east-1.rds.amazonaws.com",
+            "port": 3306,
+            "username": "evanlarsen",
+            "password": "Password$$",
+            "database": "mydb",
+            "connectionLimit": 10
+        }
     }
 }

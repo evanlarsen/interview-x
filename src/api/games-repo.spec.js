@@ -1,5 +1,5 @@
 
-import {GamesRepository} from './games-repo';
+import {GamesRepository} from './games-repo.inmemory';
 
 describe('gamesRepo', function(){
     it('getGames should return 3 `games`', function(){
