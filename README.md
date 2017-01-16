@@ -26,4 +26,8 @@ After cloning the project, run the following commands:
 This will start the development server, the sample app should be available at the following url:
 
 [http://localhost:8000/](http://localhost:8000/)
+
+To run unit tests, run the following command:
+
+    gulp test
     
