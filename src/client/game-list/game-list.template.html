@@ -1,6 +1,12 @@
-<ul>
-    <li ng-repeat="game in $ctrl.games">
-        <span>{{game.team}}</span>
-        <p>{{game.score}}</p>
-    </li>
-</ul>
+<table class="table table-striped">
+    <thead>
+        <tr><th>Teams</th><th>Score</th><th>Date</th></tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="game in $ctrl.games">
+            <td>{{game.team}}</td>
+            <td>{{game.score}}</td>
+            <td>{{game.date | date}}</td>
+        </tr>
+    </tbody>
+</table>

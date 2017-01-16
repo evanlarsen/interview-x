@@ -8,6 +8,7 @@
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="app.module.js"></script>
     <script src="app.config.js"></script>
+    <script src="nav-controller.js"></script>
     <script src="game-list/game-list.module.js"></script>
     <script src="game-list/game-list.component.js"></script>
     <script src="admin/admin.module.js"></script>
@@ -15,12 +16,19 @@
     <script src="admin/add-game.component.js"></script>
   </head>
   <body>
-      <ul class="nav nav-tabs">
-        <li role="presentation" class="active">
-          <a href="#!/games">Soccer Games</a>
+    <div class="container">
+      <div class="page-header">
+        <h1>Soccer Games</h1>
+      </div>
+      <ul class="nav nav-tabs" ng-controller="NavController">
+        <li role="presentation" ng-class="{active: $location.path() == '/games'}">
+          <a href="#!/games">History</a>
         </li>
-        <li role="presentation"><a href="#!/admin/game">Admin</a></li>
+        <li role="presentation" ng-class="{active: $location.path() != '/games'}">
+          <a href="#!/admin/game">Admin</a>
+        </li>
       </ul>
       <div ng-view></div>
+    </div>
   </body>
 </html>
