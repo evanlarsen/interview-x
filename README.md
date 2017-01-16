@@ -14,14 +14,10 @@ I administer a soccer league and I'd like a web application to track team names 
 
 # Installation instructions
 
-First make sure Gulp is globally installed, by running:
+First make sure Gulp and Bower are globally installed, by running:
 
-    npm i -g gulp
+    npm i -g gulp bower
     
-Next make sure Bower is globally installed, by running:
-
-    npm i -g bower
-
 After cloning the project, run the following commands:
 
     npm i
