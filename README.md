@@ -16,11 +16,15 @@ I administer a soccer league and I'd like a web application to track team names 
 
 First make sure Gulp is globally installed, by running:
 
-    npm install -g gulp
+    npm i -g gulp
+    
+Next make sure Bower is globally installed, by running:
+
+    npm i -g bower
 
 After cloning the project, run the following commands:
 
-    npm install
+    npm i
     gulp
     
 This will start the development server, the sample app should be available at the following url:
