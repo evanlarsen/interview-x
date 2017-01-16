@@ -4,7 +4,8 @@
   "description": "Please fork the repo and do a pull request with your changes",
   "main": "index.js",
   "scripts": {
-    "postinstall": "bower install"
+    "postinstall": "bower install",
+    "start": "gulp"
   },
   "repository": {
     "type": "git",
