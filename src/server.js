@@ -1,7 +1,8 @@
 
 import express from 'express';
 import path from 'path';
-import {GamesController} from './api/games-controller';
+import {Api} from './api/main';
+
 import * as project from '../project/project.json';
 
 let app = express();
@@ -17,4 +18,4 @@ app.set('port', project.server.port);
 
 let server = app.listen(app.get('port'));
 
-new GamesController(app);
+new Api(app);

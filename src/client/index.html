@@ -5,11 +5,22 @@
     <title>Soccer</title>
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
     <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="app.module.js"></script>
+    <script src="app.config.js"></script>
     <script src="game-list/game-list.module.js"></script>
     <script src="game-list/game-list.component.js"></script>
+    <script src="admin/admin.module.js"></script>
+    <script src="admin/signin.component.js"></script>
+    <script src="admin/add-game.component.js"></script>
   </head>
   <body>
-      <game-list></game-list>
+      <ul class="nav nav-tabs">
+        <li role="presentation" class="active">
+          <a href="#!/games">Soccer Games</a>
+        </li>
+        <li role="presentation"><a href="#!/admin/game">Admin</a></li>
+      </ul>
+      <div ng-view></div>
   </body>
 </html>

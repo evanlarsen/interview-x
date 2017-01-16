@@ -7,6 +7,6 @@ angular.
             var self = this;
             $http.get('api/games').then(response => {
                 self.games = response.data;
-            })
+            });
         }]
     });
